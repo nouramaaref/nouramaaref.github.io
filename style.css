@@ -146,7 +146,7 @@ header .logo{
 
 img#moon{
 	position: absolute;
-	left: 31%;
+	left: 32%;
 	height: 750px;
 }
 
@@ -340,7 +340,7 @@ footer .reso i:hover{
 	}
 
 	img#moon{
-	height: 650px;
+		height: 500px;
 	}
 
 	.text1 h1{
@@ -353,6 +353,10 @@ footer .reso i:hover{
 
 	.text2 h2{
 		font-size: 55px;
+	}
+
+	.titre2{
+		transform: translate(-50px, 90px);
 	}
 
 	.text3 h2{
@@ -428,7 +432,7 @@ footer .reso i:hover{
 	}
 
 	img#moon{
-		height: 600px;
+		height: 500px;
 	}
 
 	.titre1{
@@ -780,7 +784,7 @@ footer .reso i:hover{
 
 	.about{
 		padding: 40px;
-		transform: translateY(-100px);
+		transform: translateY(-50px);
 	}
 
 	.about-flex img{
@@ -793,7 +797,7 @@ footer .reso i:hover{
 	}
 
 	.projet{
-		transform: translateY(-100px);
+		transform: translateY(-50px);
 		padding-top: 20px;
 	}
 
@@ -806,7 +810,8 @@ footer .reso i:hover{
 	}
 
 	footer{
-		transform: translateY(-100px);
+		transform: translateY(-50px);
+		padding-bottom: 0;
 	}
 }
 
