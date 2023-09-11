@@ -1,0 +1,570 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	overflow-x: hidden;
+	font-family: 'Poppins', sans-serif;
+}
+
+h1{
+	font-size: 70px;
+}
+
+h2{
+	font-size: 38px;
+	font-weight: 500;
+}
+
+h3{
+	color: #df7c6d;
+}
+
+h4{
+	font-size: 25px;
+	font-weight: 500;
+}
+
+h5{
+	font-size: 18px;
+}
+
+p{
+	font-size: 17px;
+	font-weight: 300;
+}
+
+img{
+	 display: block;
+}
+
+header{
+	position: absolute;
+	top: 20px;
+	z-index: 2;
+	width: 100%;
+}
+
+footer{
+	padding: 60px 0;
+	background-color: #df7c6d;
+	color: white;
+}
+
+.container{
+	max-width: 1550px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.btn1{
+	display: inline-block;
+	background-color: white;
+	color: #df7c6d;
+	padding: 20px 70px;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-decoration: none;
+	margin-top: 30px;
+}
+
+.btn2{
+	display: inline-block;
+	background-color: #df7c6d;
+	color: white;
+	padding: 20px 70px;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-decoration: none;
+	margin-top: 30px;
+}
+
+.btn-blog{
+	color: #df7c6d;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.title{
+	text-align: center;
+	margin-bottom: 36px;
+}
+
+.header-flex{
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-flex2{
+	border-bottom: 1px solid black;
+}
+
+.header-flex2 a{
+	color: black !important;
+}
+
+.header-flex a{
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+}
+
+.header-nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+}
+
+.header-nav li{
+	margin-right: 30px;
+}
+
+.logo a{
+	font-size: 35px;
+	font-weight: 500;
+	margin-right: 100px;
+}
+
+.connection-nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+}
+
+.connection-nav li{
+	margin-left: 50px;
+}
+
+#my-form{
+	padding: 50px;
+}
+
+.big-banner{
+	height: 100vh;
+	background-image: url(bg-big-banner.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.textbox{
+	max-width: 1000px;
+	text-align: center;
+	color: white;
+}
+
+.small-banner{
+	background-color: white;
+	padding: 80px 0;
+	text-align: center;
+}
+
+.double-slide{
+	background-color: white;
+	height: 900px;
+	position: relative;
+}
+
+.ds-top{
+	width: 500px;
+}
+
+.ds-top .item{
+	height: 500px;
+	background-position: center;
+	background-size: cover;
+}
+
+.ds-nav{
+	width: 800px;
+}
+
+.ds-nav .item{
+	height: 200px;
+	background-position: center;
+	background-size: cover;
+}
+
+.position-top{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.position-nav{
+	position: absolute;
+	top: 500px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.slick-arrow{
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	border: none;
+	font-size: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+.slick-prev{
+	position: absolute;
+	right: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slick-prev:before{
+	content: url(https://cdn-icons-png.flaticon.com/512/6423/6423874.png);
+	display: block;
+	opacity: 60%;
+	transform: scale(0.05);
+}
+
+.slick-next{
+	position: absolute;
+	left: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slick-next:before{
+	content: url(https://cdn-icons-png.flaticon.com/512/6423/6423874.png);
+	display: block;
+	opacity: 60%;
+	scale: 0.05;
+	rotate: 180deg;
+}
+
+.btn-slide{
+	position: absolute;
+	bottom: 70px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.banner-products{
+	height: 700px;
+	background-image: url(bg-banner-products.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.recettes{
+	background-color: white;
+	padding: 80px 0;
+	text-align: center;
+}
+
+.recettes .container{
+	max-width: 1100px;
+}
+
+.recettes .title{
+	margin-bottom: 60px;
+}
+
+.recettes-flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: left;
+}
+
+.recettes-flex .card img{
+	width: 100%;
+}
+
+.info-recette{
+	padding: 10px;
+}
+
+.info-recette p{
+	margin-bottom: 10px;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.info-recette a{
+	display: inline-block;
+	text-decoration: none;
+	color: #df7c6d;
+	font-size: 15px;
+	font-weight: 600;
+	margin-top: 10px;
+	position: relative;
+}
+
+.info-recette a i{
+	position: absolute;
+	right: -20px;
+	top: 25%;
+	transition: 0.5s;
+}
+
+.info-recette a i:hover{
+	right: -25px;
+}
+
+.small-banner-single{
+	padding: 200px 0 80px 0;
+	background-color: white;
+}
+
+.small-banner-single h2{
+	text-align: center;
+	font-size: 50px;
+}
+
+.recette-single{
+	background-color: whitesmoke;
+	padding: 80px 0;
+}
+
+.recette-single-flex{
+	display: flex;
+	justify-content: space-between;
+}
+
+.single-flex-left{
+	width: 30%;
+	padding: 50px 0 0 200px;
+}
+
+.single-flex-left p{
+	text-align: center;
+}
+
+.single-flex-right{
+	width: 70%;
+	border-left: 1px solid black;
+	padding: 50px 40px 50px 40px;
+}
+
+.img-single img{
+	width: 70%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+}
+
+.recette-single h5{
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.single-flex-right p{
+	margin-bottom: 20px;
+}
+
+.blog{
+	background-color: white;
+	padding: 80px 0;
+}
+
+.blog .title h2{
+	color: #df7c6d;
+}
+
+.cards-flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 100px;
+}
+
+.blog .card{
+	width: 26%;
+	margin-bottom: 40px;
+}
+
+.img-client img{
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.blog .card .info-client{
+	margin-top: 20px;
+	text-align: center;
+}
+
+.blog-banner{
+	background-image: url(bg-blog-banner.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding: 200px 0;
+}
+
+.blog-banner h2{
+	color: white;
+	text-align: center;
+	font-size: 50px;
+}
+
+.ajout{
+	background-color: white;
+	padding: 80px 0;
+	text-align: center;
+}
+
+.comment{
+	background-image: url(img6.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding: 100px 0;
+}
+
+.comment .container{
+	max-width: 1100px;
+}
+
+
+.comment-flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.commentaire{
+	width: 70%;
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(8px);
+	border-radius: 10px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.img-client-comment{
+	margin-bottom: 20px;
+}
+
+.img-client-comment img{
+	border-radius: 30px;
+	width: 50%;
+	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.about-banner{
+	background-image: url(bg-about-banner.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding: 200px 0;
+}
+
+.about-banner h2{
+	color: white;
+	text-align: center;
+	font-size: 50px;
+}
+
+.galerie{
+	background-color: white;
+	padding: 80px 0;
+}
+
+.galerie-flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.galerie-flex a{
+	width: 33%;
+	margin-bottom: 10px;
+}
+
+.galerie-flex a img{
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+.footer-flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-left h4{
+	margin-bottom: 20px;
+}
+
+.footer-left p span{
+	display: block;
+	margin-top: 25px;
+}
+
+.footer-right{
+	width: 25%;
+}
+
+input[type=text]{
+	display: block;
+	width: 100%;
+	font-size: 15px;
+	padding:10px 15px;
+	border: 1px solid lightgrey;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+input[type=submit]{
+	padding:10px 25px;
+	background-color: #df7c6d;
+    border: 2px solid white;
+    color: white;
+    cursor:pointer;
+    font-size: 15px;
+}
+
+.reso-sociaux{
+	display: flex;
+	justify-content: center;
+}
+
+.reso-sociaux .icon{
+	margin-right: 10px;
+	margin-left: 10px;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+
+
+
+
