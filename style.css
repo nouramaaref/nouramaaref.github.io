@@ -14,6 +14,7 @@ body{
 	background: black;
 	color: white;
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 .container{
@@ -543,14 +544,16 @@ footer .reso i:hover{
 
 	.nav{
 		display: block;
+		margin-top: 100px;
 	}
 
 	.nav li{
 		margin-top: 10px;
+		padding: 5px;
 	}
 
 	.nav li a{
-		font-size: 12px;
+		font-size: 20px;
 	}
 
 	img#moon{
@@ -575,11 +578,16 @@ footer .reso i:hover{
 
 	.text2{
 		margin-left: -40px;
+		top: 70%;
 	}
 
 	.text2 h2{
 		font-size: 25px;
 		margin-bottom: 20px;
+	}
+
+	.text3{
+		top: 90%;
 	}
 
 	.text3 h2{
@@ -588,7 +596,7 @@ footer .reso i:hover{
 	}
 
 	.text{
-		font-size: 12px;
+		font-size: 15px;
 		width: 25%;
 	}
 
@@ -598,7 +606,7 @@ footer .reso i:hover{
 
 	.about{
 		padding: 60px;
-		transform: translateY(400px);
+		transform: translateY(200px);
 	}
 
 	.about-right{
@@ -615,7 +623,7 @@ footer .reso i:hover{
 	}
 
 	.about p{
-		font-size: 12px;
+		font-size: 15px;
 	}
 
 	.about-flex img{
@@ -625,7 +633,7 @@ footer .reso i:hover{
 	}
 
 	.projet{
-		transform: translateY(400px);
+		transform: translateY(200px);
 		padding-top: 40px;
 	}
 
@@ -643,55 +651,9 @@ footer .reso i:hover{
 	}
 
 	.projet-card p{
-		font-size: 12px;
+		font-size: 15px;
 		margin-left: 30px;
 		margin-bottom: 20px;
-	}
-
-	footer{
-		transform: translateY(400px);
-	}
-}
-
-@media only screen and (max-width: 600px){
-
-	img#moon{
-		height: 280px;
-	}
-
-	.text1 h1{
-		font-size: 35px;
-	}
-
-	.text1-flex{
-		gap: 200px;
-	}
-
-	.text3{
-		top: 100%;
-		right: 5%;
-	}
-
-	.about{
-		padding: 60px;
-		transform: translateY(250px);
-	}
-
-	.about-flex img{
-		margin-left: 60%;
-	}
-
-	.projet{
-		transform: translateY(250px);
-		padding-top: 20px;
-	}
-
-	.projet-titre{
-		margin-bottom: 50px;
-	}
-
-	.projet h2{
-		font-size: 40px;
 	}
 
 	.projet-card-left,
@@ -712,7 +674,61 @@ footer .reso i:hover{
 	}
 
 	footer{
-		transform: translateY(250px);
+		transform: translateY(200px);
+	}
+}
+
+@media only screen and (max-width: 600px){
+
+	.nav li a{
+		font-size: 15px;
+	}
+
+	img#moon{
+		height: 280px;
+	}
+
+	.text1 h1{
+		font-size: 35px;
+	}
+
+	.text1-flex{
+		gap: 200px;
+	}
+
+	.text3{
+		top: 60%;
+		right: 5%;
+	}
+
+	.text2{
+		top: 60%;
+	}
+
+	.about{
+		padding: 60px;
+		transform: translateY(-50px);
+	}
+
+	.about-flex img{
+		margin-left: 60%;
+	}
+
+	.projet{
+		transform: translateY(-50px);
+		padding-top: 20px;
+	}
+
+	.projet-titre{
+		margin-bottom: 50px;
+	}
+
+	.projet h2{
+		font-size: 40px;
+	}
+
+	footer{
+		transform: translateY(-20px);
 	}
 
 	.footer-flex{
@@ -741,23 +757,51 @@ footer .reso i:hover{
 
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 480px){
+
+	.nav{
+		margin-top: 30px;
+	}
+
+	.bigbanner{
+		padding-top: 140px;
+		height: 900px;
+	}
 
 	img#moon{
-		height: 180px;
+		position: static;
+		height: 280px;
+	}
+
+	.titre1 img,
+	.titre2 img{
+		width: 0;
+	}
+
+	.text2,
+	.text3{
+		top: 60%;
+		width: 100%;
+		margin-top: 40px;
 	}
 
 	.text1 h1{
-		font-size: 25px;
+		font-size: 40px;
 	}
 
 	.text1-flex{
-		gap: 140px;
+		gap: 20px;
+		margin-top: 60px;
+		margin-left: -50px;
 	}
 
 	.titre1{
-		margin-left: -80px;
-		transform: translateY(-50px);
+		margin-left: 0;
+		transform: translateY(0);
+	}
+
+	.titre2{
+		transform: translateY(0);
 	}
 
 	.text2 h2{
@@ -766,7 +810,7 @@ footer .reso i:hover{
 
 	.text2{
 		top: 60%;
-		margin-left: -70px;
+		margin-left: 0;
 	}
 
 	.text3 h2{
@@ -778,13 +822,13 @@ footer .reso i:hover{
 	}
 
 	.text{
-		font-size: 12px;
-		width: 25%;
+		font-size: 15px;
+		position: static;
 	}
 
 	.about{
 		padding: 40px;
-		transform: translateY(-50px);
+		transform: translateY(0);
 	}
 
 	.about-flex img{
@@ -797,7 +841,7 @@ footer .reso i:hover{
 	}
 
 	.projet{
-		transform: translateY(-50px);
+		transform: translateY(0);
 		padding-top: 20px;
 	}
 
@@ -810,10 +854,12 @@ footer .reso i:hover{
 	}
 
 	footer{
-		transform: translateY(-50px);
-		padding-bottom: 0;
+		transform: translateY(0);
+		padding-bottom: 40px;
 	}
 }
+
+
 
 
 

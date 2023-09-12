@@ -19,6 +19,15 @@ $(document).ready(function(){
 	});
 
 /*AOS-ANIM-ON-SCROLL*/
-AOS.init();
+ if (window.innerWidth >= 800) {
+  AOS.init();
+} else {
+  // Désactivez AOS en supprimant les classes et les attributs AOS des éléments animés
+  var animatedElements = document.querySelectorAll('[data-aos]');
+  animatedElements.forEach(function(element) {
+    element.removeAttribute('data-aos');
+    element.classList.remove('aos-init', 'aos-animate');
+  });
+}
 
 }); //NE JAMAIS EFFACER!
