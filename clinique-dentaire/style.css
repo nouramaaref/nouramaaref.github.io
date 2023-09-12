@@ -925,6 +925,24 @@ footer .center p{
 		font-size: 30px;
 		margin-left: 10px;
 	}
-	
+}
 
+@media only screen and (max-width: 480px){
+
+	.equipe .container{
+		width: 80%;
+	}
+
+	.equipe-img{
+		width: 300px;
+		height: 300px;
+	}
+}
+
+@media only screen and (max-width: 400px){
+
+	.equipe-img{
+		width: 250px;
+		height: 250px;
+	}
 }
