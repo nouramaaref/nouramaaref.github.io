@@ -1,5 +1,19 @@
 $( document ).ready(function() {
 
+
+  //MENU BURGER/
+$('.burger').click(function() {
+      $('body').toggleClass('menu-ouverte');
+    });
+
+ //CLOSE ICON
+$('.close-icon').click(function() {
+      $('body').removeClass('menu-ouverte'); 
+    });
+
+
+
+
  //DOUBLE SLIDER  
 $('.ds-top').slick({
   slidesToShow: 1,
@@ -14,7 +28,22 @@ $('.ds-nav').slick({
   asNavFor: '.ds-top',
   dots: false,
   centerMode: false,
-  focusOnSelect: true
+  focusOnSelect: true,
+   responsive: [
+    {
+      breakpoint: 1000, 
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 600, 
+      settings: {
+        slidesToShow: 2, 
+      }
+    }
+
+  ]
 });
 
 //FANCYBOX

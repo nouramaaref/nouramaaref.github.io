@@ -116,6 +116,17 @@ footer{
 	font-size: 18px;
 }
 
+.burger{
+	cursor: pointer;
+	display: none;
+	color: white;
+	font-size: 35px;
+}
+
+.close-icon{
+	display: none;
+}
+
 .header-nav{
 	display: flex;
 	justify-content: space-between;
@@ -229,6 +240,7 @@ footer{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	z-index: 2;
 }
 
 .slick-prev:before{
@@ -510,6 +522,7 @@ footer{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .footer-left h4{
@@ -555,6 +568,254 @@ input[type=submit]{
 	margin-left: 10px;
 	font-size: 25px;
 	cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px){
+
+	h1{
+		font-size: 60px;
+	}
+
+	.btn1{
+		padding: 18px 50px;
+	}
+
+	.btn2{
+		padding: 18px 50px;
+	}
+
+	.container{
+		max-width: 1000px;
+	}
+
+	.ds-nav{
+		width: 700px;
+	}
+
+	.burger {
+        display: block;
+    }
+    
+	.header-nav {
+		display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 30vh;
+        background: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0; 
+        visibility: hidden;
+        transition: opacity 1s, visibility 1s;
+    }
+
+    body.menu-ouverte .header-nav {
+        opacity: 1;
+        visibility: visible; 
+    }
+
+    .close-icon {
+        font-size: 40px;
+        color: white;
+        position: absolute;
+        top: 5px;
+        right: 45px;
+        cursor: pointer;
+        display: none;
+        z-index: 2000;
+    }
+    
+    .menu-ouverte .close-icon {
+        display: block;
+    }
+
+    .header-flex a{
+    	font-size: 25px;
+    }
+
+    .header-nav li {
+        margin-right: 50px;
+    }
+
+	.slick-next{
+		left: 94%;
+	}
+
+	.slick-prev{
+		right: 94%;
+	}
+
+	.banner-products{
+		height: 600px;
+	}
+
+	.small-banner{
+		padding: 70px 0;
+	}
+
+	.recettes{
+		padding: 70px 0;
+	}
+
+	.blog{
+		padding: 70px 0;
+	}
+	
+	.blog .card{
+		width: 40%;
+		margin-bottom: 40px;
+	}
+
+	.single-flex-left{
+		padding: 45px 0 0 45px;
+	}
+}
+
+@media only screen and (max-width: 600px){
+
+	h1{
+		font-size: 40px;
+	}
+
+	h2{
+		font-size: 20px;
+	}
+
+	p{
+		font-size: 15px;
+	}
+
+	.btn1{
+		padding: 15px 40px;
+		font-size: 15px;
+	}
+
+	.btn2{
+		padding: 15px 40px;
+		font-size: 15px;
+	}
+
+	.close-icon {
+        font-size: 20px;
+    }
+
+    .header-flex a{
+    	font-size: 18px;
+    }
+
+    .connection-nav{
+    	display: block;
+    }
+
+    .connection-nav li{
+    	margin-left: 0;
+    	margin-top: 10px;
+    }
+
+    .logo a{
+    	font-size: 35px;
+		font-weight: 500;
+		margin-right: 0;
+    } 
+
+	.position-top{
+		top: -30px;
+	}
+
+	.position-nav{
+		top: 470px;
+	}
+
+	.ds-nav{
+		width: 400px;
+	}
+
+	.slick-next{
+		left: 87%;
+	}
+
+	.slick-prev{
+		right: 87%;
+	}
+
+	.banner-products{
+		height: 400px;
+	}
+
+	.small-banner{
+		padding: 50px 0;
+	}
+
+	.recettes{
+		padding: 50px 0;
+	}
+
+	.recettes-flex{
+		flex-wrap: wrap;
+	}
+
+	.recettes-flex .card{
+		width: 100%;
+	}
+
+	.blog{
+		padding: 50px 0;
+	}
+
+	.blog .card{
+		width: 100%;
+		margin-bottom: 40px;
+	}
+
+	.cards-flex{
+		margin-top: 50px;
+	}
+
+	.galerie-flex a{
+		width: 49%;
+	}
+
+	.recette-single-flex{
+		flex-wrap: wrap;
+	}
+
+	.single-flex-right{
+		width: 100%;
+		border-left: none;
+	}
+
+	.single-flex-left{
+		width: 100%;
+		padding: 0;
+	}
+
+	footer{
+		padding: 40px 0;
+	}
+	
+	.footer-right{
+		width: 100%;
+		text-align: center;
+	}
+
+	.footer-left{
+		width: 100%;
+		text-align: center;
+	}
+
+	input[type=text]{
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+	}
+
+	.reso-sociaux .icon{
+		margin-top: 20px;
+	}
 }
 
 
